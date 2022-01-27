@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto sans", sans-serif;
+  color: black;
+  background-color: grey;
+  font-size: 18px;
+}
+
+/* +++++++++++++++++++ Global Set up +++++++++++++++++++ */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  padding-top: 20px;
+  width: 90vw;
+  margin: auto;
+  /* background-color: rgb(246, 239, 232); */
+}
+
+.wrapper {
+  background-color: rgb(246, 239, 232);
+}
+
+/* ++++++++++++ Working on first part left ++++++++++++++ */
+.image img {
+  width: 100px;
+}
+
+.image,
+.dropdown,
+.information,
+.information1 a {
+  padding-right: 40px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  padding-left: 10px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  background-color: white;
+  min-width: 300px;
+  line-height: 2.5;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(0, 102, 255);
+  display: block;
+}
+
+/* ++++++++++++ Working on first part right ++++++++++++++ */
+
+.right {
+  /* width: 450px; */
+  gap: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.information-3 {
+  position: relative;
+  display: flex;
+  gap: 25px;
+}
+
+.fas {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+a.talking,
+a.try {
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border: 1px solid #611f69;
+  color: #611f69;
+  transition: 0.3s;
+  margin: 10px;
+}
+
+a.try {
+  color: #fff;
+  background-color: #611f69;
+}
+
+a.try:hover {
+  background-color: #532058;
+}
+
+a.talking:hover {
+  color: white;
+  background-color: #611f69;
+}
+
+/* ++++++++++++ Working on heading part ++++++++++++++ */
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1264a3;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.heading-content {
+  position: relative;
+  color: white;
+  line-height: 1.8;
+  padding-left: 50px;
+  padding-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.close-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+/* ++++++++++++ Working on main heading part ++++++++++++++ */
+
+.main-heading {
+  margin-top: 40px;
+  display: flex;
+  gap: 300px;
+}
+
+.main-heading-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-size: 5rem;
+}
+
+.title-information p {
+  line-height: 2;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
